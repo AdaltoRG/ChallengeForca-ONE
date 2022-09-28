@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/win.png">
+    <title>Challenge Forca ONE</title>
+</head>
+
+<body>
+    <section id="screen-one">
+
+        <img class="logo" src="./img/icon.png" alt="logo jogo da forca" width="100vw" />
+
+        <h1>Jogo da Forca</h1>
+
+        <button class="buttons" id="start">Começar a jogar</button>
+
+        <button class="buttons" id="new-word">Adicionar nova palavra</button>
+
+    </section>
+
+    <section id="screen-two">
+
+        <div id="new-word-area">
+
+            <img class="logo2" src="./img/icon.png" alt="logo jogo da forca" width="100vw" />
+
+            <textarea name="palavras" id="palavra-nova" cols="20" rows="10"
+                placeholder="Digite uma palavra ou frase"></textarea>
+
+            <p>&#9888; Máx. de 8 letras</p>
+
+            <section id="iniciar">
+
+                <button class="new-word-buttons" id="save-start-button">
+                    Salvar e começar
+                </button>
+
+                <button class="new-word-buttons" id="cancel-button">
+                    Cancelar
+                </button>
+
+            </section>
+
+        </div>
+
+    </section>
+
+    <section id="screen-three">
+
+        <div class="forca-area">
+            <img id="vidas" src="img/8.png" alt="vidas" width="300px">
+            <img id="mario" src="" alt="Mario" width="200px">
+        </div>
+
+        <div class="Letras" id="letrasErradas">
+            <h3>Letras Erradas:</h3>
+        </div>
+        <div class="Letras" id="areaSecreta"></div>
+
+        <div class="game-buttons-area">
+
+            <button class="game-buttons" id="new-game">Novo Jogo</button>
+
+            <button class="game-buttons" id="quit">Desistir</button>
+
+        </div>
+
+    </section>
+    <div id="tela-vitoria" class="tela-fim">
+        <h1>Você Venceu!</h1>
+        <img id="game-win" src="./img/win.png" alt="game-win">
+        <button class="game-buttons" onclick="location.reload()">Novo Jogo</button>
+    </div>
+
+    <div id="tela-derrota" class="tela-fim">
+        <h1>Você Perdeu!</h1>
+        <img id="game-over" src="./img/game-over.png" alt="game-over">
+        <button class="game-buttons" onclick="location.reload()">Novo Jogo</button>
+    </div>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    background-image: url(https://i.pinimg.com/originals/f4/10/19/f410193477a2184096a7596dea22971d.jpg);
+    background-size: cover;
+}
+
+/*
+Tela 1
+*/
+.logo {
+    width: 20%;
+}
+h1{
+    color: #32213A;
+}
+
+#screen-one {
+    border-radius: 2.5vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10vh 10vw;
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.buttons {
+    width: 15vw;
+    height: 7vh;
+    border-radius: 20px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+#start {
+    
+    border-color: #5e3717;
+    background-color: #5e3717;
+    color: #f4692b;
+    font-size: 24px;
+}
+#new-word{
+    background-color: #f4692b;
+    border-color: #5e3717;
+    color: #5e3717;
+    font-size: 24px;
+}
+
+/*
+Tela 2
+*/
+.logo2{
+    position: absolute;
+    top: 2vh;
+    left: 0.5vw;
+    width: 12%;
+}
+#screen-two{
+    display: none;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10vh 10vw;
+    height: 80vh;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5vh;
+}
+#new-word-area{
+    height: 55%;
+    width: 70%;
+    
+}
+#palavra-nova{
+    width: 80%;
+    height: 80%;
+    background-color:  rgba(255, 255, 255, 0.822);
+    outline: whitesmoke;
+    border: none;
+    resize: none;
+    align-self: center;
+    font-size: 32px;
+    border-radius: 2.5vh;
+    padding: 2vh;
+}
+#palavra-nova::placeholder{
+    color: #5e3717;
+}
+#new-word-area p{
+    color: #5e3717;
+    margin: 2vh 2vh;
+}
+.new-word-buttons{
+    width: 15vw;
+    height: 6vh;
+    border-radius: 2.5vh;
+    border-width: 1px;
+    cursor: pointer;
+}
+#save-start-button{
+background-color: #5e3717;
+border-color: #f4692b;
+color: #f4692b;
+font-size: 24px;
+}
+#cancel-button{
+background-color: #f4692b;
+border-color:#5e3717;
+color: #5e3717;
+font-size: 24px;
+}
+
+/*
+Tela3
+*/
+#screen-three{
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10vh 10vw;
+    height: 80vh;
+    width: 80vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2.5vh;
+}
+.forca-area{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-buttons{
+    width: 15vw;
+    height: 6vh;
+    border-radius: 2.5vh;
+    border-width: 1px;
+    cursor: pointer;
+}
+#new-game{
+    background-color: #5e3717;
+    border-color: #f4692b;
+    color: #f4692b;
+    font-size: 24px;
+}
+#quit{
+    background-color: #f4692b;
+border-color:#5e3717;
+color: #5e3717;
+font-size: 24px;
+}
+
+span{
+    font-size: 60px;
+}
+.tela-fim{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10vh 10vw;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 2.5vh;
+    font-size: xx-large;
+}
+.tela-fim button{
+    background-color: #f4692b;
+    font-size: 24px;
+}
+#game-over{
+    width: 200px;
+}
+#game-win{
+    width: 250px;
+}
+
+@media screen and (max-width: 480px){
+
+    .logo{
+        width: 50%;
+    }
+    .buttons {
+        width: 50vw;
+        
+    }
+    .new-word-buttons{
+        width: 50vw;
+        margin-bottom: 2px;
+    }
+    .logo2{
+        width: 20%;
+    }
+#vidas{
+    width: 40%;
+}
+.game-buttons{
+    width: 30vw;
+    
+}
+}
